@@ -10,7 +10,7 @@ body {
   background: transparent;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   background: #040404 url("../img/bg.jpeg") top right no-repeat;
@@ -20,7 +20,7 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
-}
+} */
 
 @media (min-width: 1024px) {
   body::before {

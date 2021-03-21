@@ -28,21 +28,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   
-  <!-- Vendor Script-->
-  <script src="three.r119.min.js"></script>
-  <script src="vanta.net.min.js"></script>
-  <script>
-    {VANTA.NET({
-      el: "#your-element-selector",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00
-    })}
-  </script>
 
 </head>
 
@@ -50,6 +35,27 @@
 
   
   <!-- ======= Header ======= -->
+  <div id="vanta-canvas"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<script>
+  VANTA.WAVES({
+    el: "#vanta-canvas",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 980.00,
+    minWidth: 500.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x781429,
+    shininess: 61.00,
+    waveHeight: 38.00,
+    waveSpeed: 1.10,
+    zoom: 1.13
+  })
+</script>
+</div>
   <header id="header" class="header-tops">
     <div class="container">
       <div class="col-md-3 col-8 mx-2 mb-4 mb-md-0">
@@ -68,7 +74,7 @@
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -361,6 +367,20 @@
           </div>
         </div>
 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Speech Guessing Game</h4>
+              <p>Python,numpy, pyaudio, Tkinter</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.png" data-gall="portfolioGallery" class="venobox" title="Covid-19 Text Summarizer"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/DannChang/Speech-Guessing-Game" title="Github Repository"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -423,6 +443,8 @@
       document.head.appendChild(t);
     });
   </script>
+
+
 
 </body>
 
